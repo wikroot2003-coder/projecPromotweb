@@ -89,7 +89,7 @@ export default function Header() {
                       <Icon d={icons.search} className="w-4 h-4 text-gray-300 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <p className="text-sm text-gray-800 truncate">{item.name}</p>
-                        <p className="text-xs text-gray-400">{item.type}{item.price ? ` - ₹${item.price.toLocaleString()}` : ""}</p>
+                        <p className="text-xs text-gray-400">{item.type}{item.price ? ` - ฿${item.price.toLocaleString()}` : ""}</p>
                       </div>
                       <Icon d={icons.chevRight} className="w-3 h-3 text-gray-300 shrink-0" />
                     </button>

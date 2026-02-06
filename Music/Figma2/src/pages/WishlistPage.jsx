@@ -68,10 +68,10 @@ export default function WishlistPage() {
               <h4 className="text-sm font-medium text-gray-700 mb-2 truncate hover:text-cyan-600 transition-colors">{product.name}</h4>
             </Link>
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-base font-bold text-gray-900">₹{product.price.toLocaleString()}</span>
-              <span className="text-xs text-gray-400 line-through">₹{product.originalPrice.toLocaleString()}</span>
+              <span className="text-base font-bold text-gray-900">฿{product.price.toLocaleString()}</span>
+              <span className="text-xs text-gray-400 line-through">฿{product.originalPrice.toLocaleString()}</span>
             </div>
-            <p className="text-xs font-semibold text-green-500 mb-3">Save - ₹{product.save.toLocaleString()}</p>
+            <p className="text-xs font-semibold text-green-500 mb-3">Save - ฿{product.save.toLocaleString()}</p>
             <button
               onClick={() => handleAddToCart(product)}
               className={`w-full py-2.5 rounded-xl text-xs font-semibold transition-all duration-300 ${

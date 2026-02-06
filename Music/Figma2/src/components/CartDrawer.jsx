@@ -41,9 +41,9 @@ export default function CartDrawer() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="text-sm font-medium text-gray-800 truncate">{item.name}</h4>
-                    <p className="text-xs text-green-500 font-semibold mt-0.5">Save ₹{item.save.toLocaleString()}</p>
+                    <p className="text-xs text-green-500 font-semibold mt-0.5">Save ฿{item.save.toLocaleString()}</p>
                     <div className="flex items-center justify-between mt-2">
-                      <span className="text-sm font-bold text-gray-900">₹{(item.price * item.qty).toLocaleString()}</span>
+                      <span className="text-sm font-bold text-gray-900">฿{(item.price * item.qty).toLocaleString()}</span>
                       <div className="flex items-center gap-2">
                         <button onClick={() => updateQty(item.id, item.qty - 1)} className="w-7 h-7 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-cyan-50 hover:border-cyan-300 transition-colors text-sm font-bold">-</button>
                         <span className="text-sm font-semibold w-5 text-center">{item.qty}</span>
@@ -67,7 +67,7 @@ export default function CartDrawer() {
           <div className="border-t border-gray-100 px-6 py-4 space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-sm text-gray-500">Subtotal</span>
-              <span className="text-lg font-bold text-gray-900">₹{totalPrice.toLocaleString()}</span>
+              <span className="text-lg font-bold text-gray-900">฿{totalPrice.toLocaleString()}</span>
             </div>
             <button
               onClick={() => { setIsOpen(false); navigate("/checkout"); }}

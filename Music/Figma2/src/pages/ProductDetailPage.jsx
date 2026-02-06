@@ -288,15 +288,15 @@ export default function ProductDetailPage() {
               <div className="bg-gradient-to-r from-cyan-50 to-white rounded-xl p-5 mb-6 border border-cyan-100">
                 <div className="flex items-baseline gap-3 mb-2">
                   <span className="text-4xl font-bold text-gray-900">
-                    ₹{product.price.toLocaleString()}
+                    ฿{product.price.toLocaleString()}
                   </span>
                   <span className="text-lg text-gray-400 line-through">
-                    ₹{product.originalPrice.toLocaleString()}
+                    ฿{product.originalPrice.toLocaleString()}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-sm font-semibold text-green-600">
-                    You save ₹{product.save.toLocaleString()}
+                    You save ฿{product.save.toLocaleString()}
                   </span>
                   <span className="text-xs text-gray-500">Inclusive of all taxes</span>
                 </div>
@@ -373,7 +373,7 @@ export default function ProductDetailPage() {
                 <FeatureCard
                   icon={icons.truck}
                   title="Free Delivery"
-                  description="On orders above ₹500"
+                  description="On orders above ฿500"
                 />
                 <FeatureCard
                   icon={icons.shield}

@@ -53,10 +53,10 @@ const ProductCard = ({ p }) => {
         </div>
         <h4 className="text-xs font-medium text-gray-700 mb-2 truncate">{p.name}</h4>
         <div className="flex items-center gap-2 mb-1">
-          <span className="text-sm font-bold text-gray-900">₹{p.price.toLocaleString()}</span>
-          <span className="text-[11px] text-gray-400 line-through">₹{p.originalPrice.toLocaleString()}</span>
+          <span className="text-sm font-bold text-gray-900">฿{p.price.toLocaleString()}</span>
+          <span className="text-[11px] text-gray-400 line-through">฿{p.originalPrice.toLocaleString()}</span>
         </div>
-        <p className="text-xs font-semibold text-green-500 mb-3">Save - ₹{p.save.toLocaleString()}</p>
+        <p className="text-xs font-semibold text-green-500 mb-3">Save - ฿{p.save.toLocaleString()}</p>
       </Link>
       <button
         onClick={handleAdd}

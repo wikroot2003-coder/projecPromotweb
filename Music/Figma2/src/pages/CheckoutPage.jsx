@@ -243,7 +243,7 @@ export default function CheckoutPage() {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Total Amount</span>
-                  <span className="text-gray-900 font-bold">₹{grandTotal.toLocaleString()}</span>
+                  <span className="text-gray-900 font-bold">฿{grandTotal.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Estimated Delivery</span>
@@ -274,7 +274,7 @@ export default function CheckoutPage() {
                     <div className="flex-1 min-w-0">
                       <p className="text-xs font-medium text-gray-700 truncate">{item.name}</p>
                       <p className="text-xs text-gray-400">Qty: {item.qty}</p>
-                      <p className="text-xs font-bold text-gray-900">₹{(item.price * item.qty).toLocaleString()}</p>
+                      <p className="text-xs font-bold text-gray-900">฿{(item.price * item.qty).toLocaleString()}</p>
                     </div>
                   </div>
                 ))}
@@ -282,17 +282,17 @@ export default function CheckoutPage() {
               <div className="border-t border-gray-100 pt-3 space-y-2">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Subtotal</span>
-                  <span className="text-gray-800">₹{totalPrice.toLocaleString()}</span>
+                  <span className="text-gray-800">฿{totalPrice.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">Shipping</span>
                   <span className={shipping === 0 ? "text-green-500 font-medium" : "text-gray-800"}>
-                    {shipping === 0 ? "Free" : `₹${shipping}`}
+                    {shipping === 0 ? "Free" : `฿${shipping}`}
                   </span>
                 </div>
                 <div className="flex justify-between text-base font-bold border-t border-gray-100 pt-2 mt-2">
                   <span className="text-gray-800">Total</span>
-                  <span className="text-gray-900">₹{grandTotal.toLocaleString()}</span>
+                  <span className="text-gray-900">฿{grandTotal.toLocaleString()}</span>
                 </div>
               </div>
             </div>
