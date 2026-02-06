@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd Music/Figma2 && npm install && npm run build",
+  "outputDirectory": "Music/Figma2/dist",
+  "framework": null,
+  "installCommand": "cd Music/Figma2 && npm install",
+  "rewrites": [
+    {
+      "source": "/((?!api/.*|_next/.*|static/.*|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
